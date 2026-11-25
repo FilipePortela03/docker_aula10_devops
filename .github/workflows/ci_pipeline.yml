@@ -1,3 +1,4 @@
+
 name: Pipeline CI/CD com Elastic APM (Python OTLP Customizado)
 
 on:
@@ -28,7 +29,7 @@ jobs:
 
       - name: Executar Testes
         run: npm test
-        # O 'continue-on-error: true' garante que mesmo se os testes falharem, 
+        # O 'continue-on-error: true' garante que mesmo se os testes falharem.
         # o workflow continuará para enviar o trace do resultado ao APM.
         continue-on-error: true
 
